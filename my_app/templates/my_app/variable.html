@@ -6,8 +6,23 @@
 </head>
 <body>
     <h1>VARIABLE PAGE</h1>
-    <H2>{{first_name}} {{last_name}}</H2>
+    <H2>{{first_name|capfirst}} {{last_name|capfirst}}</H2>
     <h2>{{some_list.1}}</h2>
     <h2>{{some_dict.inside_key}}</h2>
+    <h2>{{list_with_spaces|cut:' '}}</h2>
+    
+    {% comment %} Django tags {% endcomment %}
+    <h1>Django Tags</h1>
+    {% comment %} Looping a List {% endcomment %}
+    <ul>
+    {% for num in some_list %}
+        <li>{{num}}</li>
+    {% endfor %}
+    </ul>
+
+    {% comment %} Looping a Dictionary {% endcomment %}
+    {% for key,value in some_dict.items %}
+        <h1>{{key}} {{value}}</h1>
+    {% endfor %}
 </body>
 </html>
