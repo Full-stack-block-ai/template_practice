@@ -24,5 +24,16 @@
     {% for key,value in some_dict.items %}
         <h1>{{key}} {{value}}</h1>
     {% endfor %}
+
+    {% comment %} for loop and if else {% endcomment %}
+    <ul>
+    {% for num in some_list %}
+    {% if num == 2  %}
+    <li>Two</li>
+    {% else %}
+    <li>{{num}}</li>
+    {% endif %}
+    {% endfor %}
+    </ul>
 </body>
 </html>
