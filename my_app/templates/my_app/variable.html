@@ -1,11 +1,7 @@
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h1>VARIABLE PAGE</h1>
+{% extends "base.html" %}
+
+{% block content %}
+<h1>VARIABLE PAGE</h1>
     <H2>{{first_name|capfirst}} {{last_name|capfirst}}</H2>
     <h2>{{some_list.1}}</h2>
     <h2>{{some_dict.inside_key}}</h2>
@@ -35,5 +31,4 @@
     {% endif %}
     {% endfor %}
     </ul>
-</body>
-</html>
+{% endblock content %}
