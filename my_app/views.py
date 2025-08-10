@@ -11,3 +11,6 @@ def variable_view(request):
 
     # my_var contains the data rendered on variable.html making it dynamic.
     return render(request,'my_app/variable.html', context=my_var)
+
+def homepage(request):
+    return render(request, 'my_app/home.html')

@@ -1,0 +1,7 @@
+{% extends "base.html" %}
+{% comment %} adding a static file to the homepage {% endcomment %}
+{% load static %}
+{% block content %}
+<h1>Homepage</h1>
+<img src="{% static 'my_app/django.jpg'%}" alt="image" style="width: 200px; height: auto;">
+{% endblock content %}
