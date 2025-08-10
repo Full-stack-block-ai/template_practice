@@ -1,5 +1,7 @@
+{% comment %}inherits the structure of a parent template, block names must match {% endcomment %}
 {% extends "base.html" %}
 
+{% comment %} defines content to replace a block in the parent template {% endcomment %}
 {% block content %}
 <h1>VARIABLE PAGE</h1>
     <H2>{{first_name|capfirst}} {{last_name|capfirst}}</H2>

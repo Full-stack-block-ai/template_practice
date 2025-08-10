@@ -1,6 +1,9 @@
+{% comment %} inherits the structure of a parent template {% endcomment %}
 {% extends "base.html" %}
 
+{% comment %} defines content to replace a block in the parent template {% endcomment %}
 {% block content %}
 <h1>EXAMPLE PAGE</h1>
+{% comment %} pattern for url {% url 'namespace:route_name'%} {% endcomment %}
 <a href="{% url 'my_site:variable' %}">click me to go to variable</a>
 {% endblock content %}

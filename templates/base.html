@@ -1,3 +1,4 @@
+{% comment %} html template includes things like navebar footer sitemap  {% endcomment %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,6 +7,7 @@
     <title>Document</title>
 </head>
 <body>
+    {% comment %} structure of template the block is inserted between the nav and fotter in the below case. {% endcomment %}
     <h1>This is a navbar</h1>
     {% block content %}
     {% endblock content %}
